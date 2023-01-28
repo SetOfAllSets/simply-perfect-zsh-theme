@@ -5,3 +5,4 @@ install via
 ```bash
 curl https://raw.githubusercontent.com/SetOfAllSets/simply-perfect-zsh-theme/main/simply-perfect.zsh-theme > ~/.oh-my-zsh/custom/themes/simply-perfect.zsh-theme
 ```
+and change the ZSH_THEME settings in ~/.zshrc to ``simply-perfect``
