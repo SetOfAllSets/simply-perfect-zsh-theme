@@ -3,5 +3,5 @@ my Oh-My-Zsh theme
 
 install via
 ```bash
-curl > ~/.oh-my-zsh/custom/themes/
+curl https://raw.githubusercontent.com/SetOfAllSets/simply-perfect-zsh-theme/main/simply-perfect.zsh-theme > ~/.oh-my-zsh/custom/themes/
 ```
