@@ -1,3 +1,5 @@
+#you found me!
+
 right_triangle() {
    echo $'\ue0b0'
 }
@@ -46,9 +48,27 @@ ending() {
 	ARROW_FG="015"
         ARROW_BG="016"
         NEXT_ARROW_BG=""
-        NEXT_ARROW_FG="016"
-	echo "%F{016}$(left_triangle)%f$(arrow_start)$(status)%F{015}%K{016} | %B%T%b%f%k$(arrow_end)"
+        NEXT_ARROW_FG=$ARROW_BG
+	echo "%F{$ARROW_BG}$(left_triangle)%f$(arrow_start)$(status)%F{015}%K{016} | %B%T%b%f%k$(arrow_end)"
 }
 
+git_stuff() {
+	ARROW_FG="016"
+        ARROW_BG="148"
+        NEXT_ARROW_BG=""
+        NEXT_ARROW_FG=$ARROW_BG
+	if [ "$(git_prompt_info)" != "" ];
+	then
+	echo "%F{$ARROW_BG}$(left_triangle)%f$(arrow_start)$(git_prompt_info)$(arrow_end)"
+	else
+	echo -n ""
+	fi
+}
+
+ZSH_THEME_GIT_PROMPT_PREFIX=""
+ZSH_THEME_GIT_PROMPT_SUFFIX=""
+ZSH_THEME_GIT_PROMPT_DIRTY="*"
+ZSH_THEME_GIT_PROMPT_CLEAN=""
+
 PROMPT='$(name)$(dir)'
-RPROMPT='$(ending)'
+RPROMPT='$(git_stuff)$(ending)'
