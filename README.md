@@ -7,4 +7,4 @@ curl https://raw.githubusercontent.com/SetOfAllSets/simply-perfect-zsh-theme/mai
 ```
 and change the ZSH_THEME settings in ~/.zshrc to ``simply-perfect``
 
-![image](https://user-images.githubusercontent.com/98566029/215363722-c7f9af18-6152-4118-8a02-1163ca48abfb.png)
+![image](https://user-images.githubusercontent.com/98566029/215363754-f16153f8-6e60-4002-8a20-c88ba95d145e.png)
