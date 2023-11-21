@@ -1,4 +1,4 @@
-[!WARNING] UNMAINTAINED
+[!UNMAINTAINED]
 
 # simply-perfect-zsh-theme
 my Oh-My-Zsh theme
