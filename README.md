@@ -1,6 +1,6 @@
-[!UNMAINTAINED]
+# UNMAINTAINED
 
-# simply-perfect-zsh-theme
+## simply-perfect-zsh-theme
 my Oh-My-Zsh theme
 
 install by running
